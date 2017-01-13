@@ -1,0 +1,57 @@
+/*
+    global open
+*/
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 400;
+    width: 100vw;
+    overflow-x: hidden;
+    color: #004cff;
+}
+body a{
+    color: #004cff;
+}
+.home,
+.catalog,
+.contact{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+/*
+    global close
+*/
+
+/*
+    menu open
+*/
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    padding: 20px;
+}
+.menu li a{
+    font-weight: 700;
+    text-decoration: none;
+}
+/*
+    menu close
+*/
+
+/*
+    error page open
+*/
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.error *{
+    padding: 5px;
+}
+/*
+    error page close
+*/
