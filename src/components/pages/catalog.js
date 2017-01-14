@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-class Catalog extends Component{  
+import { fetchItem }  from '../../actions/itemAction';
+
+class Catalog extends Component{
+
+    componentDidMount(){
+        this.props.dispatch(fetchItem())
+    }
 
     render(){
         return(
@@ -11,4 +18,8 @@ class Catalog extends Component{
     }
 }
 
-export default Catalog;
+const mapStateToProps = state =>({
+    items : state.items
+});
+
+export default connect(mapStateToProps)(Catalog);
